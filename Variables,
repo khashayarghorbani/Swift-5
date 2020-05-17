@@ -1,0 +1,11 @@
+var  characterName: String = "Khashayar"
+var weaponClassification: String = "range"
+characterName += " the Demon Hunter"
+var currentMana: Double = 90
+var manaPercentage = String(currentMana/100) + "%"
+var debugStats: String = "\n \(characterName) \n Special Ability = \(weaponClassification) \n Mana = \(manaPercentage)"
+var questAccepted = false
+var canQuest = true
+var  questStatus = questAccepted && canQuest
+debugStats.append(contentsOf: "\n quest: \(questStatus)")
+print(debugStats)

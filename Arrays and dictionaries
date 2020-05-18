@@ -27,7 +27,7 @@ var KhashayarsGrade = studentsGrade["Khashayar"]
 studentsGrade["Ardeshir"] = 97
 //add another student to student's Grade
 studentsGrade["Mike"] = 41
-//All Values
+//All values
 var allValues = [Int](studentsGrade.values)
 //all Keys
 var allKeys = [String](studentsGrade.keys)

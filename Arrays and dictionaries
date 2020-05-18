@@ -1,0 +1,36 @@
+var students : [String] = ["Jack", "John","Dave","Smith"]
+var extraSyntax : Array<String> = Array<String>()
+students.count
+extraSyntax.isEmpty
+var studentUpdate = students[3]
+students[3] = "Sam"
+students.append("Khashayar")
+students += ["Ardeshir"]
+students.insert("Mike", at: 1)
+students.remove(at: 0)
+students.reverse()
+var studentReversed = students.reversed()
+students.sort()
+var studentSorted = students.sorted()
+studentSorted.contains("Ardeshir")
+//2D ARRAYS
+var staffs : [[String]] = [
+["Teachers: ", "Andre","Soheil","Saygin"],
+    ["reception: ","Emily" , "Jane" , "Sam"]
+]
+//calling Jane
+var staffsCall = staffs[1][2]
+//dictionaries
+var studentsGrade : [String:Int] = ["Ardeshir" : 88 , "Dave" : 76, "john" : 56,"Khashayar" : 100 , "Sam" : 93]
+//Strings are keys and the Integers are Values
+var KhashayarsGrade = studentsGrade["Khashayar"]
+studentsGrade["Ardeshir"] = 97
+//add another student to student's Grade
+studentsGrade["Mike"] = 41
+//All Values
+var allValues = [Int](studentsGrade.values)
+//all Keys
+var allKeys = [String](studentsGrade.keys)
+print(studentsGrade)
+
+

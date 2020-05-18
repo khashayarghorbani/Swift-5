@@ -1,0 +1,16 @@
+var employeesSalary : [String : Int] = ["John":1300 , "Jack": 1400 , "Elizabeth" : 2000]
+var employeeUpdate = employeesSalary.updateValue(1700, forKey: "Jack")
+//employeesSalary["John"] = nil
+var employeeRemoved = employeesSalary.removeValue(forKey: "John")
+var employeeStats = [
+    "job" : [
+        "Cook" : "helping chef and write down the menu",
+        "chef" : "make a list of the food that we are going to make"
+    ],
+    "salary" :[
+        "hourly" : "you get paid every 2 weeks",
+        "Monthly" : "you will get paid every 1 month"
+    ]
+]
+var cookSalary = employeeStats["salary"]?["hourly"]
+
